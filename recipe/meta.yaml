@@ -1,5 +1,5 @@
 {% set name = "coreforecast" %}
-{% set version = "0.0.8" %}
+{% set version = "0.0.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/coreforecast-{{ version }}.tar.gz
-  sha256: c352306fadf1faa52c68170abbd9ef6b5cb95fec8a0667206e4efe0f397b7f9b
+  sha256: 6926060bba0f624890da9db01ecb770f8d3a12afb0df4b7ed20b72811d2fe2e5
 
 build:
   skip: true  # [py<38]
@@ -19,6 +19,7 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - cmake
     - make  # [not win]
     - ninja  # [win]
