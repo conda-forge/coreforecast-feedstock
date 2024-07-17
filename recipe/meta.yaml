@@ -29,8 +29,6 @@ requirements:
     - python
     - scikit-build-core
     - pip
-    - llvm-openmp  # [osx]
-    - libgomp  # [linux]
   run:
     - python
     - importlib_resources  # [py<310]
