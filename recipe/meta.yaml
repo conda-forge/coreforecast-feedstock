@@ -23,6 +23,7 @@ requirements:
   host:
     - python
     - scikit-build-core
+    - pip
     - pybind11
   run:
     - python
