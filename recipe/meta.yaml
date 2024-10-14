@@ -20,18 +20,12 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
-    - cmake
-    - make  # [not win]
-    - ninja  # [win]
-    - python                                 # [build_platform != target_platform]
-    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
     - python
     - scikit-build-core
-    - pip
+    - pybind11
   run:
     - python
-    - importlib_resources  # [py<310]
     - numpy >=1.20.0
 
 test:
