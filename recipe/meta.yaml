@@ -1,5 +1,5 @@
 {% set name = "coreforecast" %}
-{% set version = "0.0.13.1" %}
+{% set version = "0.0.14" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/coreforecast-{{ version }}.tar.gz
-  sha256: 82cfd58e5663e082a44105ea7ad956b8324bb63e1aff224d99a9e2457b8e6914
+  sha256: 8f6c05fd449cd6eb8595818632a3bada07bcd8982bb3d78c12818858fa159a0f
 
 build:
   skip: true  # [py<39]
