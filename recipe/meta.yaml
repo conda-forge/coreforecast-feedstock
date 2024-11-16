@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/coreforecast-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/coreforecast-{{ version }}.tar.gz
   sha256: c95cebfe01ae0b43876ad12900109534f4862dcdcf13ebf88a57295f4daa5e5f
 
 build:
