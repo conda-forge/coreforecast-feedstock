@@ -1,5 +1,5 @@
 {% set name = "coreforecast" %}
-{% set version = "0.0.19" %}
+{% set version = "0.0.20" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/coreforecast-{{ version }}.tar.gz
-  sha256: 62806692cef34e5e88d5cd02b174556d012882637764d21b2c30530d17404825
+  sha256: 0e7400df93351f962ec0324ba0262ce044d3ed84437dc39ac0d11484c25f3d1f
 
 build:
   skip: true  # [py<39]
